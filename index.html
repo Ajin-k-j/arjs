@@ -7,7 +7,7 @@
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
   <style>
     body { margin: 0; padding: 0; }
-    a-scene { position: absolute; width: 100%; height: 100%; }
+    a-scene { width: 100vw; height: 100vh; }
   </style>
 </head>
 <body>
@@ -15,9 +15,9 @@
     <!-- Use the custom marker pattern file -->
     <a-marker type="pattern" url="https://ajin-k-j.github.io/arjs/pattern-marker.patt">
       <!-- Display image parallel to the wall -->
-      <a-image src="https://ajin-k-j.github.io/arjs/model/1.gif" position="1 1 1" rotation="-90 0 0" scale="1 1 1"></a-image>
+      <a-image src="https://ajin-k-j.github.io/arjs/model/1.gif" position="0 0 0" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
       <!-- Display welcome message parallel to the wall -->
-      <a-text value="Welcome!" position="4 4 4" rotation="-90 0 0" scale="2 2 2" color="white" align="center"></a-text>
+      <a-text value="Welcome!" position="0 -0.5 0" rotation="-90 0 0" scale="0.5 0.5 0.5" color="white" align="center"></a-text>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
